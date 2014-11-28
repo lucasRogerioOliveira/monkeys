@@ -1,0 +1,10 @@
+<form id="monkeyForm" name="monkeyForm" ng-submit="save(monkey)">
+  <div class="form-group">
+    <input type="text" name="specie" ng-model="monkey.specie" class="form-input" required />
+    <input type="number" name="height" ng-model="monkey.height" class="form-input" required/>
+    <input type="number" name="weight" ng-model="monkey.weight" class="form-input" required />
+  </div>
+  <div class="form-group">
+    <button type="submit" ng-disabled="monkeyForm.$invalid">Save</button>
+  </div>
+</form>

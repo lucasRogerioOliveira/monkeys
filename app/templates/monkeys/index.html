@@ -1,0 +1,22 @@
+<table id="monkeys">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Specie</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="monkey in monkeys">
+      <td>{{monkey.id}}</td>
+      <td>{{monkey.specie}}</td>
+      <td>{{monkey.height}}</td>
+      <td>{{monkey.weight}}</td>
+      <td><button ng-click="destroy(monkey)">delete</button></td>
+      <td><a href="/monkeys/edit/{{monkey.id}}">edit</a></td>
+    </tr>
+  </tbody>
+</table>
